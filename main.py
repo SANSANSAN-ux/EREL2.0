@@ -10,7 +10,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import desc
 from database import Base, engine, get_db, SessionLocal
 from models import User, Task, News, AuctionLot, Bid, DutyReport
-from .security import hash_password, check_password, make_token, get_user, roles
+from security import hash_password, check_password, make_token, get_user, roles
 
 app = FastAPI(title="ЭРЭЛ")
 Base.metadata.create_all(engine)
